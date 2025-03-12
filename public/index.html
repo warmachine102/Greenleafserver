@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html><head>
+  <title>GreenLeaf Organics - Signup and Login</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Basic form styling */
+    .form-container {
+      width: 80%;
+      max-width: 400px;
+      margin: 20px auto;
+      padding: 20px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      background-color: #f9f9f9;
+    }
+
+    .form-container h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .form-container form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .form-container label {
+      margin-bottom: 8px;
+      font-weight: bold;
+      color: #555;
+    }
+
+    .form-container input[type="email"],
+    .form-container input[type="password"] {
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 1em;
+    }
+
+    .form-container button {
+      padding: 10px 15px;
+      border: none;
+      border-radius: 4px;
+      background-color: #4CAF50; /* Green color */
+      color: white;
+      cursor: pointer;
+      font-size: 1em;
+    }
+
+    .form-container button:hover {
+      background-color: #45a049;
+    }
+
+    /* Style for form sections */
+    #forms-section {
+      padding: 20px 0;
+      background-color: #f4f4f4; /* Light grey background */
+    }
+
+    #forms-section .section-container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap; /* Allow forms to wrap on smaller screens */
+    }
+
+    #forms-section .form-container {
+      flex: 1; /* Distribute space equally */
+      min-width: 300px; /* Minimum width for each form */
+      margin: 10px; /* Space between forms */
+    }
+  </style>
+</head><body>
+  <header>
+    <nav>
+      <a href="index.html"><h1>GreenLeaf Organics</h1></a>
+      <p>Nourishing Families with Nature's Best</p>
+    </nav>
+    <div id="hero">
+      <img src="https://th.bing.com/th/id/OIG3.q8b_.8MP_4NwIFAjy.uA?pid=ImgGn" alt="Fresh Organic Produce">
+      <div id="hero-text">
+        <h2>Live Healthy</h2>
+        <p>With Nature's Best</p>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section id="about-intro">
+      <h2>Welcome to GreenLeaf Organics</h2>
+      <p>Your trusted source for fresh, wholesome, and organic groceries in Hyderabad.</p>
+      <p>We are committed to providing our community with the highest quality produce, sourced directly from local farmers and trusted suppliers.</p>
+      <a href="about.html" class="button">Learn More</a>
+    </section>
+
+    <section id="forms-section">
+      <div class="section-container">
+        <div class="form-container">
+          <h2>Signup</h2>
+          <form action="/signup" method="POST">
+            <label for="signup-email">Email:</label>
+            <input type="email" id="signup-email" name="email" required>
+
+            <label for="signup-password">Password:</label>
+            <input type="password" id="signup-password" name="password" required>
+
+            <button type="submit">Signup</button>
+          </form>
+        </div>
+
+        <div class="form-container">
+          <h2>Login</h2>
+          <form action="/login" method="POST">
+            <label for="login-email">Email:</label>
+            <input type="email" id="login-email" name="email" required>
+
+            <label for="login-password">Password:</label>
+            <input type="password" id="login-password" name="password" required>
+
+            <button type="submit">Login</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section id="featured-products">
+      <h2>Featured Products</h2>
+      <div class="product-grid">
+        <div class="product-item">
+          <img src="https://th.bing.com/th/id/OIG4.nYdGv188TCQTNDhuiX5W?pid=ImgGn" alt="Fresh Produce">
+          <h3>Fresh Produce</h3>
+          <p>A wide variety of seasonal fruits and vegetables, sourced directly from local farms.</p>
+          <a href="products.html" class="button">View All Products</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="social-links">
+      <a href="#"><img src="facebook_icon.png" alt="Facebook"></a>
+      <a href="#"><img src="instagram_icon.png" alt="Instagram"></a>
+    </div>
+    <p>© 2025 GreenLeaf Organics. All rights reserved.</p>
+  </footer>
+  <script src="script.js"></script></body></html>
+```
